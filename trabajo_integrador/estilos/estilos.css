@@ -1,0 +1,346 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&family=Palanquin:wght@300&family=Roboto+Condensed&family=Rock+Salt&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans HK', sans-serif;
+    box-sizing: border-box;
+}
+
+/*al header le aplico la imagen,y le doy el alto*/
+header{
+    background-image: url("../imagenes/header.jpg"); 
+    background-size: cover; 
+    height:100vh;
+    width: 100%;
+  }
+/*en la caja contenedora que tiene el logo, nav y titulos
+aplico el padding top, el ancho*/
+.inicio{ 
+    padding-top: 90px;
+    margin-left: 2%;
+    margin-right:5%;
+ 
+  
+}
+
+.padre_logo_nav{
+    /*esta caja es el padre de el nav, 
+    entonces el nav queda en forma de row siempre */
+    display: flex;
+    /*este valor acomoda en fila, ya esta preestablecido */
+    flex-direction: row;
+    /*flex_direction:column aplica en columna*/
+    /*acomoda como si tuviera margin entre los elementos, los separa
+    con una distancia proporcional*/
+    justify-content: space-between;
+    align-items: center;
+   /* background-color: darkorange;*/
+}
+.navcabecera{
+     display: flex; 
+     /*esto manda todo el contenido del navcabecera
+      a la derecha siempre va en el padre*/
+      justify-content: flex-end; 
+     /*flex-start lo manda a la izquierda*/
+    /* text-align: right;*/
+ /*   background-color: darksalmon;*/
+}
+.navcabecera a {
+    padding: 5px ;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'Noto Sans HK', sans-serif;
+  /*  background-color:darkviolet;*/
+   
+}
+.logo{
+   /* background-color: deeppink;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.titulosInferiores{
+  /*  display: flex;
+    align-items: flex-end;
+    height:inherit;*/
+    position: static;
+    margin-left: 2%;
+    margin-right:5%;
+    font-size: 24px;
+    font-family: 'Noto Sans HK', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.subtit {   
+   /*background-color: indigo;*/
+   padding-top: 20%;
+  /* padding-bottom: 35%; */
+}
+
+
+
+ @media(max-width:600px){
+    /* si el maximo es 600px que haga lo siguiente*/
+      .navcabecera a{ 
+          width:30%
+      }
+      .logo img{
+          width: 90%;
+      }
+      .tit1,.tit2{
+        font-size: 12px;
+      }
+      
+  }
+
+/*body*/
+
+.tituloSeccion{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 18px;  
+}
+
+.contenedor{
+    margin-top: 3%;
+    margin-left:10%;
+    margin-right:10%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;  
+} 
+
+.icono h3 {
+    margin: 10%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.icono p{
+    line-height: 1.5; 
+    margin-bottom: 3%;
+    font-size: 10px;
+}
+.icono .img1y2{
+    width: 23%; 
+}
+
+.icono .img3{
+    width: 18%; 
+}
+/*segunda seccion del main */
+
+
+.icono2{
+    width: 250px;
+    height: 400px;
+    margin-left:2%;
+    margin-bottom: 2%;
+    background:rgb(245, 243, 243);
+    border-color: rgb(170, 170, 170);
+    border: 1px solid rgb(189, 183, 183);
+    display: flex;
+    flex-direction: column;
+ }
+
+.icono2 .foto{
+    width: 100%;
+    height:50%;
+    /*width: 250px;*/
+   
+   /* height:200px ;*/
+}
+.contenedor .tit_art{
+    margin-top: 8%;
+    font-size:15px;
+  
+}
+.icono2 p{
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 2;
+}
+.descrip{
+    font-size:10px;
+}
+.precio{
+    color: rgb(24, 187, 24);
+    margin-top: 0.5%;
+    margin-bottom: 3%;
+    font-size:10px;
+}
+.detalle{
+    margin-left: 12%;
+    margin-right: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detalle img{
+    width: 16%; 
+}
+.detalle p{
+    font-size: 10px;
+}
+
+.icono2 .verpropiedad{
+    margin-top: 8%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(223,136,23) ;
+    margin-bottom: 8%;
+    font-size:10px;
+    padding:2%;
+}
+.icono2 .verpropiedad:hover{
+    background-color: rgb(189, 116, 20) ;
+}
+
+.icono2 a{
+    text-decoration: none;
+    color: white;
+}
+.icono2 .verpropiedad p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.posicion{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%; 
+}
+
+.todas {
+    
+    width: 10%;
+    background-color: rgb(113, 177, 31);
+    padding: 1% 2% 1% 2%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size:9px;
+}
+/*cuando pasa el mouse se oscurese */
+.todas:hover{
+    background: rgb(52, 133, 49);
+}
+
+/*seccion encuentra*/
+/*imagen y padre */
+.encuentra{
+    background-image: url("../imagenes/encuentra.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    color: white;
+    height: 210PX;
+    margin-top: 10px;
+    font-family: Arial;
+    
+}
+.encuentra h4{
+    font-size: 14px;
+    padding-top: 6%;
+    padding-left:11%;  
+}
+
+/*llena el formulario y alguien se pondra contigo a la brevedad...*/
+.encuentra p{
+    font-size: 10px;
+    top: 0.3%;
+    margin-left: 11%;
+}
+
+/* padre del boton naranja contactanos*/
+.contactanos{
+    font-family: Arial;
+    margin-top: 3%;
+    width: 10%;
+    margin-left: 11%;
+    background-color: rgb(223,136,23) ;
+    margin-bottom: 20%;
+    font-size:10px;
+    padding:0.8%;
+    display: flex;
+    justify-content: center;   
+}
+
+.contactanos:hover{
+    background-color: rgb(189, 116, 20) ;
+}
+
+.contactanos a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+@media(max-width:600px){
+    /* si el maximo es 600px que haga lo siguiente*/
+      .contactanos { 
+          width:20%
+      }
+      .todas{
+          width:15%;
+      }
+     
+  }
+/*pie de pagina*/
+
+
+footer{
+    width: 100%;
+    background-color: rgb(51, 51, 51); 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   /* height: 50px;*/
+    padding-bottom: 1%;
+    align-items: center;
+    color: white;
+    font-size: 11px;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+.diseño{
+    margin-top: 1.8%;
+    margin-right:5%;
+}
+
+.navpie{
+    display: flex;
+    justify-content: flex-start;
+    margin-top:10%;
+    margin-left: 40%;
+}
+
+.navpie a{
+    padding-right: 9%;
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+@media(max-width:600px){
+    /* si el maximo es 600px que haga lo siguiente*/
+    
+      .navpie a{
+        width:50%;
+        font-size: 9px;
+      }
+      .diseño{
+          width: 20%;
+          font-size: 9px;
+      }
+     
+  }
